@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #121212; 
+  color: #e0e0e0; 
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+.search {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.search input::placeholder {
+  color: #888; 
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #6200ea; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search button:hover {
+  background-color: #3700b3; 
+}
+
+
+.location-suggestions {
+  position: absolute;
+  margin-top: 35px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.location-suggestions h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.location-suggestions h1:hover {
+  background-color: #333;
+}
+
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.current-and-chart {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.current {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 300px; 
+}
+
+.current-weather img {
+  margin: 10px 0;
+}
+
+
+.chart {
+  flex: 2;
+  background-color: #1e1e1e;
+  width: 50%;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.forecast-details {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+.forecast-item {
+  background-color: #292929;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.forecast-item img {
+  max-width: 50px;
+}
+
+.forecast-item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.forecast-item p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+
+.forecast-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.forecast-details::-webkit-scrollbar-thumb {
+  background: #6200ea;
+  border-radius: 10px;
+}
+
+.forecast-details::-webkit-scrollbar-track {
+  background: #333;
+}
+
+@media(min-width:768px){
+
+
+  .chart{
+    width: 100%;
+  }
+}
